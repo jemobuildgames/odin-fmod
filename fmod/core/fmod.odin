@@ -1,14 +1,14 @@
 package fmod_core
 
 // ========================================================================================
-// FMOD Core API - C header file.                                                          
-// Copyright (c), Firelight Technologies Pty, Ltd. 2004-2023.                              
-//                                                                                         
-// Use this header in conjunction with fmod_common.h (which contains all the constants /   
-// callbacks) to develop using the C interface                                             
-//                                                                                         
-// For more detail visit:                                                                  
-// https://fmod.com/docs/2.02/api/core-api.html                                            
+// FMOD Core API - C header file.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2004-2023.
+//
+// Use this header in conjunction with fmod_common.h (which contains all the constants /
+// callbacks) to develop using the C interface
+//
+// For more detail visit:
+// https://fmod.com/docs/2.02/api/core-api.html
 // ========================================================================================
 
 LOGGING_ENABLED :: #config(FMOD_LOGGING_ENABLED, ODIN_DEBUG)
@@ -25,6 +25,13 @@ when ODIN_OS == .Darwin {
         foreign import lib "lib/darwin/libfmodL.dylib"
     } else {
         foreign import lib "lib/darwin/libfmod.dylib"
+    }
+}
+when ODIN_OS == .Linux {
+    when LOGGING_ENABLED {
+        foreign import lib "lib/linux/libfmodL.so"
+    } else {
+        foreign import lib "lib/linux/libfmod.so"
     }
 }
 

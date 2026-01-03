@@ -115,7 +115,15 @@ MEMORY_REALLOC_CALLBACK :: #type proc(ptr: rawptr, size: u32, type: u32, sourceS
 MEMORY_FREE_CALLBACK :: #type proc(ptr: rawptr, type: u32, sourceStr: cstring)
 
 when ODIN_OS == .Windows {
-    foreign import lib "lib/x64/fsbank_vs.lib"
+    foreign import lib "lib/windows/x64/fsbank_vs.lib"
+}
+
+when ODIN_OS == .Darwin {
+    foreign import lib "lib/darwin/libfsbank.so"
+}
+
+when ODIN_OS == .Linux {
+    foreign import lib "lib/linux/libfsbank.dylib"
 }
 
 @(default_calling_convention = "c", link_prefix = "FSBank_")
