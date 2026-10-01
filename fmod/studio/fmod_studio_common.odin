@@ -2,13 +2,13 @@ package fmod_studio
 
 /* ======================================================================================== */
 /* FMOD Studio API - Common C/C++ header file.                                              */
-/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2023.                               */
+/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2026.                               */
 /*                                                                                          */
 /* This header defines common enumerations, structs and callbacks that are shared between   */
 /* the C and C++ i32erfaces.                                                                */
 /*                                                                                          */
 /* For more detail visit:                                                                   */
-/* https://fmod.com/docs/2.02/api/studio-api.html                                           */
+/* https://fmod.com/docs/2.03/api/studio-api.html                                           */
 /* ======================================================================================== */
 
 import fmod "../core"
@@ -122,6 +122,8 @@ PARAMETER_TYPE :: enum i32 {
     PARAMETER_AUTOMATIC_SPEED,
     PARAMETER_AUTOMATIC_SPEED_ABSOLUTE,
     PARAMETER_AUTOMATIC_DISTANCE_NORMALIZED,
+
+    PARAMETER_MAX,
 }
 
 USER_PROPERTY_TYPE :: enum i32 {

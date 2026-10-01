@@ -25,6 +25,7 @@ error_string :: proc(result: RESULT) -> string {
         case .WARN_FORCED_DONTWRITENAMES:  return "FSBANK_BUILD_FSB5_DONTWRITENAMES flag forced: cannot write names when source is from memory."
         case .ERR_ENCODER_FILE_NOTFOUND:   return "External encoder dynamic library not found."
         case .ERR_ENCODER_FILE_BAD:        return "External encoder dynamic library could not be loaded, possibly incorrect binary format, incorrect architecture, or file corruption."
+        case .WARN_IGNORED_ALIGN4K:        return "FSBANK_BUILD_ALIGN4K flag ignored: feature only supported by Opus, Vorbis, and FADPCM formats."
     }
     // odinfmt: enable
     return "Unknown error"

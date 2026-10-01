@@ -2,14 +2,14 @@ package fmod_core
 
 /* ======================================================================================== */
 /* FMOD Core API - DSP header file.                                                         */
-/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2023.                               */
+/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2026.                               */
 /*                                                                                          */
 /* Use this header if you are wanting to develop your own DSP plugin to use with FMODs      */
 /* dsp system.  With this header you can make your own DSP plugin that FMOD can             */
 /* register and use.  See the documentation and examples on how to make a working plugin.   */
 /*                                                                                          */
 /* For more detail visit:                                                                   */
-/* https://fmod.com/docs/2.02/api/plugin-api-dsp.html                                       */
+/* https://fmod.com/docs/2.03/api/plugin-api-dsp.html                                       */
 /* =========================================================================================*/
 
 
@@ -36,6 +36,8 @@ DSP_PARAMETER_TYPE :: enum i32 {
     DSP_PARAMETER_TYPE_INT,
     DSP_PARAMETER_TYPE_BOOL,
     DSP_PARAMETER_TYPE_DATA,
+
+    DSP_PARAMETER_TYPE_MAX,
 }
 
 DSP_PARAMETER_FLOAT_MAPPING_TYPE :: enum i32 {
@@ -52,6 +54,8 @@ DSP_PARAMETER_DATA_TYPE :: enum i32 {
     DSP_PARAMETER_DATA_TYPE_FFT                = -4,
     DSP_PARAMETER_DATA_TYPE_3DATTRIBUTES_MULTI = -5,
     DSP_PARAMETER_DATA_TYPE_ATTENUATION_RANGE  = -6,
+    DSP_PARAMETER_DATA_TYPE_DYNAMIC_RESPONSE   = -7,
+    DSP_PARAMETER_DATA_TYPE_FINITE_LENGTH      = -8,
 }
 
 
@@ -373,6 +377,15 @@ DSP_PARAMETER_FFT :: struct {
     length:      i32,
     numchannels: i32,
     spectrum:    [32]^f32,
+}
+
+DSP_PARAMETER_DYNAMIC_RESPONSE :: struct {
+    numchannels: i32,
+    rms:         [32]f32,
+}
+
+DSP_PARAMETER_FINITE_LENGTH :: struct {
+    finite: b32,
 }
 
 DSP_DESCRIPTION :: struct {

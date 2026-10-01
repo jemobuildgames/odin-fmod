@@ -2,13 +2,13 @@ package fmod_core
 
 // ========================================================================================
 // FMOD Core API - C header file.
-// Copyright (c), Firelight Technologies Pty, Ltd. 2004-2023.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2004-2026.
 //
 // Use this header in conjunction with fmod_common.h (which contains all the constants /
 // callbacks) to develop using the C interface
 //
 // For more detail visit:
-// https://fmod.com/docs/2.02/api/core-api.html
+// https://fmod.com/docs/2.03/api/core-api.html
 // ========================================================================================
 
 LOGGING_ENABLED :: #config(FMOD_LOGGING_ENABLED, ODIN_DEBUG)
@@ -121,7 +121,7 @@ foreign lib {
     System_GetSpeakerModeChannels :: proc(system: ^SYSTEM, mode: SPEAKERMODE, channels: ^i32) -> RESULT ---
 
     // System information functions.
-    System_GetVersion :: proc(system: ^SYSTEM, version: ^u32) -> RESULT ---
+    System_GetVersion :: proc(system: ^SYSTEM, version: ^u32, buildnumber: ^u32) -> RESULT ---
     System_GetOutputHandle :: proc(system: ^SYSTEM, handle: ^rawptr) -> RESULT ---
     System_GetChannelsPlaying :: proc(system: ^SYSTEM, channels: ^i32, realchannels: ^i32) -> RESULT ---
     System_GetCPUUsage :: proc(system: ^SYSTEM, usage: ^CPU_USAGE) -> RESULT ---
@@ -132,6 +132,7 @@ foreign lib {
     System_CreateStream :: proc(system: ^SYSTEM, name_or_data: cstring, mode: MODE, exinfo: ^CREATESOUNDEXINFO, sound: ^^SOUND) -> RESULT ---
     System_CreateDSP :: proc(system: ^SYSTEM, #by_ptr description: DSP_DESCRIPTION, dsp: ^^DSP) -> RESULT ---
     System_CreateDSPByType :: proc(system: ^SYSTEM, _type: DSP_TYPE, dsp: ^^DSP) -> RESULT ---
+    System_CreateDSPConnection :: proc(system: ^SYSTEM, _type: DSPCONNECTION_TYPE, connection: ^^DSPCONNECTION) -> RESULT ---
     System_CreateChannelGroup :: proc(system: ^SYSTEM, name: cstring, channelgroup: ^^CHANNELGROUP) -> RESULT ---
     System_CreateSoundGroup :: proc(system: ^SYSTEM, name: cstring, soundgroup: ^^SOUNDGROUP) -> RESULT ---
     System_CreateReverb3D :: proc(system: ^SYSTEM, reverb: ^^REVERB3D) -> RESULT ---
@@ -593,6 +594,7 @@ foreign lib {
     //
 
     DSP_AddInput :: proc(dsp: ^DSP, input: ^DSP, connection: ^^DSPCONNECTION, _type: DSPCONNECTION_TYPE) -> RESULT ---
+    DSP_AddInputPreallocated :: proc(dsp: ^DSP, input: ^DSP, connection: ^^DSPCONNECTION) -> RESULT ---
     DSP_DisconnectFrom :: proc(dsp: ^DSP, target: ^DSP, connection: ^DSPCONNECTION) -> RESULT ---
     DSP_DisconnectAll :: proc(dsp: ^DSP, inputs: b32, outputs: b32) -> RESULT ---
     DSP_GetNumInputs :: proc(dsp: ^DSP, numinputs: ^i32) -> RESULT ---
@@ -624,13 +626,13 @@ foreign lib {
     // DSP parameter control.
     //
 
-    DSP_SetParameterf32 :: proc(dsp: ^DSP, index: i32, value: f32) -> RESULT ---
+    DSP_SetParameterFloat :: proc(dsp: ^DSP, index: i32, value: f32) -> RESULT ---
     DSP_SetParameterInt :: proc(dsp: ^DSP, index: i32, value: i32) -> RESULT ---
-    DSP_SetParameterb32 :: proc(dsp: ^DSP, index: i32, value: b32) -> RESULT ---
+    DSP_SetParameterBool :: proc(dsp: ^DSP, index: i32, value: b32) -> RESULT ---
     DSP_SetParameterData :: proc(dsp: ^DSP, index: i32, data: rawptr, length: u32) -> RESULT ---
-    DSP_GetParameterf32 :: proc(dsp: ^DSP, index: i32, value: ^f32, valuestr: ^u8, valuestrlen: i32) -> RESULT ---
+    DSP_GetParameterFloat :: proc(dsp: ^DSP, index: i32, value: ^f32, valuestr: ^u8, valuestrlen: i32) -> RESULT ---
     DSP_GetParameterInt :: proc(dsp: ^DSP, index: i32, value: ^i32, valuestr: ^u8, valuestrlen: i32) -> RESULT ---
-    DSP_GetParameterb32 :: proc(dsp: ^DSP, index: i32, value: ^b32, valuestr: ^u8, valuestrlen: i32) -> RESULT ---
+    DSP_GetParameterBool :: proc(dsp: ^DSP, index: i32, value: ^b32, valuestr: ^u8, valuestrlen: i32) -> RESULT ---
     DSP_GetParameterData :: proc(dsp: ^DSP, index: i32, data: ^rawptr, length: ^u32, valuestr: ^u8, valuestrlen: i32) -> RESULT ---
     DSP_GetNumParameters :: proc(dsp: ^DSP, numparams: ^i32) -> RESULT ---
     DSP_GetParameterInfo :: proc(dsp: ^DSP, index: i32, desc: ^^DSP_PARAMETER_DESC) -> RESULT ---

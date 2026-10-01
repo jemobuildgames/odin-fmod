@@ -2,13 +2,13 @@ package fmod_studio
 
 /* ======================================================================================== */
 /* FMOD Studio API - C header file.                                                         */
-/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2023.                               */
+/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2026.                               */
 /*                                                                                          */
 /* Use this header in conjunction with fmod_studio_common.h (which contains all the         */
 /* constants / callbacks) to develop using the C language.                                  */
 /*                                                                                          */
 /* For more detail visit:                                                                   */
-/* https://fmod.com/docs/2.02/api/studio-api.html                                           */
+/* https://fmod.com/docs/2.03/api/studio-api.html                                           */
 /* ======================================================================================== */
 
 import fmod "../core"
@@ -158,6 +158,7 @@ foreign lib {
 
     EventInstance_IsValid :: proc(eventinstance: ^EVENTINSTANCE) -> b32 ---
     EventInstance_GetDescription :: proc(eventinstance: ^EVENTINSTANCE, description: ^^EVENTDESCRIPTION) -> fmod.RESULT ---
+    EventInstance_GetSystem :: proc(eventinstance: ^EVENTINSTANCE, system: ^^SYSTEM) -> fmod.RESULT ---
     EventInstance_GetVolume :: proc(eventinstance: ^EVENTINSTANCE, volume: ^f32, finalvolume: ^f32) -> fmod.RESULT ---
     EventInstance_SetVolume :: proc(eventinstance: ^EVENTINSTANCE, volume: f32) -> fmod.RESULT ---
     EventInstance_GetPitch :: proc(eventinstance: ^EVENTINSTANCE, pitch: ^f32, finalpitch: ^f32) -> fmod.RESULT ---

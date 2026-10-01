@@ -2,13 +2,13 @@ package fmod_core
 
 /* ============================================================================================================= */
 /* FMOD Core API - Built-in effects header file.                                                                 */
-/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2023.                                                    */
+/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2026.                                                    */
 /*                                                                                                               */
 /* In this header you can find parameter structures for FMOD system registered DSP effects                       */
 /* and generators.                                                                                               */
 /*                                                                                                               */
 /* For more detail visit:                                                                                        */
-/* https://fmod.com/docs/2.02/api/core-api-common-dsp-effects.html#fmod_dsp_type                                 */
+/* https://fmod.com/docs/2.03/api/core-api-common-dsp-effects.html#fmod_dsp_type                                 */
 /* ============================================================================================================= */
 
 DSP_TYPE :: enum i32 {
@@ -27,15 +27,12 @@ DSP_TYPE :: enum i32 {
     DSP_TYPE_PARAMEQ,
     DSP_TYPE_PITCHSHIFT,
     DSP_TYPE_CHORUS,
-    DSP_TYPE_VSTPLUGIN,
-    DSP_TYPE_WINAMPPLUGIN,
     DSP_TYPE_ITECHO,
     DSP_TYPE_COMPRESSOR,
     DSP_TYPE_SFXREVERB,
     DSP_TYPE_LOWPASS_SIMPLE,
     DSP_TYPE_DELAY,
     DSP_TYPE_TREMOLO,
-    DSP_TYPE_LADSPAPLUGIN,
     DSP_TYPE_SEND,
     DSP_TYPE_RETURN,
     DSP_TYPE_HIGHPASS_SIMPLE,
@@ -43,12 +40,12 @@ DSP_TYPE :: enum i32 {
     DSP_TYPE_THREE_EQ,
     DSP_TYPE_FFT,
     DSP_TYPE_LOUDNESS_METER,
-    DSP_TYPE_ENVELOPEFOLLOWER,
     DSP_TYPE_CONVOLUTIONREVERB,
     DSP_TYPE_CHANNELMIX,
     DSP_TYPE_TRANSCEIVER,
     DSP_TYPE_OBJECTPAN,
     DSP_TYPE_MULTIBAND_EQ,
+    DSP_TYPE_MULTIBAND_DYNAMICS,
 
     DSP_TYPE_MAX,
 }
@@ -88,6 +85,14 @@ DSP_ECHO :: enum i32 {
     DSP_ECHO_FEEDBACK,
     DSP_ECHO_DRYLEVEL,
     DSP_ECHO_WETLEVEL,
+    DSP_ECHO_DELAYCHANGEMODE,
+}
+
+
+DSP_ECHO_DELAYCHANGEMODE_TYPE :: enum i32 {
+    DSP_ECHO_DELAYCHANGEMODE_FADE,
+    DSP_ECHO_DELAYCHANGEMODE_LERP,
+    DSP_ECHO_DELAYCHANGEMODE_NONE,
 }
 
 
@@ -169,6 +174,49 @@ DSP_MULTIBAND_EQ_FILTER_TYPE :: enum i32 {
     DSP_MULTIBAND_EQ_FILTER_BANDPASS,
     DSP_MULTIBAND_EQ_FILTER_NOTCH,
     DSP_MULTIBAND_EQ_FILTER_ALLPASS,
+    DSP_MULTIBAND_EQ_FILTER_LOWPASS_6DB,
+    DSP_MULTIBAND_EQ_FILTER_HIGHPASS_6DB,
+}
+
+
+DSP_MULTIBAND_DYNAMICS :: enum i32 {
+    DSP_MULTIBAND_DYNAMICS_LOWER_FREQUENCY,
+    DSP_MULTIBAND_DYNAMICS_UPPER_FREQUENCY,
+    DSP_MULTIBAND_DYNAMICS_LINKED,
+    DSP_MULTIBAND_DYNAMICS_USE_SIDECHAIN,
+    DSP_MULTIBAND_DYNAMICS_A_MODE,
+    DSP_MULTIBAND_DYNAMICS_A_GAIN,
+    DSP_MULTIBAND_DYNAMICS_A_THRESHOLD,
+    DSP_MULTIBAND_DYNAMICS_A_RATIO,
+    DSP_MULTIBAND_DYNAMICS_A_ATTACK,
+    DSP_MULTIBAND_DYNAMICS_A_RELEASE,
+    DSP_MULTIBAND_DYNAMICS_A_GAIN_MAKEUP,
+    DSP_MULTIBAND_DYNAMICS_A_RESPONSE_DATA,
+    DSP_MULTIBAND_DYNAMICS_B_MODE,
+    DSP_MULTIBAND_DYNAMICS_B_GAIN,
+    DSP_MULTIBAND_DYNAMICS_B_THRESHOLD,
+    DSP_MULTIBAND_DYNAMICS_B_RATIO,
+    DSP_MULTIBAND_DYNAMICS_B_ATTACK,
+    DSP_MULTIBAND_DYNAMICS_B_RELEASE,
+    DSP_MULTIBAND_DYNAMICS_B_GAIN_MAKEUP,
+    DSP_MULTIBAND_DYNAMICS_B_RESPONSE_DATA,
+    DSP_MULTIBAND_DYNAMICS_C_MODE,
+    DSP_MULTIBAND_DYNAMICS_C_GAIN,
+    DSP_MULTIBAND_DYNAMICS_C_THRESHOLD,
+    DSP_MULTIBAND_DYNAMICS_C_RATIO,
+    DSP_MULTIBAND_DYNAMICS_C_ATTACK,
+    DSP_MULTIBAND_DYNAMICS_C_RELEASE,
+    DSP_MULTIBAND_DYNAMICS_C_GAIN_MAKEUP,
+    DSP_MULTIBAND_DYNAMICS_C_RESPONSE_DATA,
+}
+
+
+DSP_MULTIBAND_DYNAMICS_MODE_TYPE :: enum i32 {
+    DSP_MULTIBAND_DYNAMICS_MODE_DISABLED,
+    DSP_MULTIBAND_DYNAMICS_MODE_COMPRESS_UP,
+    DSP_MULTIBAND_DYNAMICS_MODE_COMPRESS_DOWN,
+    DSP_MULTIBAND_DYNAMICS_MODE_EXPAND_UP,
+    DSP_MULTIBAND_DYNAMICS_MODE_EXPAND_DOWN,
 }
 
 
@@ -350,7 +398,7 @@ DSP_THREE_EQ :: enum i32 {
 }
 
 
-DSP_FFT_WINDOW :: enum i32 {
+DSP_FFT_WINDOW_TYPE :: enum i32 {
     DSP_FFT_WINDOW_RECT,
     DSP_FFT_WINDOW_TRIANGLE,
     DSP_FFT_WINDOW_HAMMING,
@@ -360,11 +408,23 @@ DSP_FFT_WINDOW :: enum i32 {
 }
 
 
+DSP_FFT_DOWNMIX_TYPE :: enum i32 {
+    DSP_FFT_DOWNMIX_NONE,
+    DSP_FFT_DOWNMIX_MONO,
+}
+
+
 DSP_FFT :: enum i32 {
     DSP_FFT_WINDOWSIZE,
-    DSP_FFT_WINDOWTYPE,
+    DSP_FFT_WINDOW,
+    DSP_FFT_BAND_START_FREQ,
+    DSP_FFT_BAND_STOP_FREQ,
     DSP_FFT_SPECTRUMDATA,
-    DSP_FFT_DOMINANT_FREQ,
+    DSP_FFT_RMS,
+    DSP_FFT_SPECTRAL_CENTROID,
+    DSP_FFT_IMMEDIATE_MODE,
+    DSP_FFT_DOWNMIX,
+    DSP_FFT_CHANNEL,
 }
 
 DSP_LOUDNESS_METER_HISTOGRAM_SAMPLES :: 66
@@ -399,13 +459,6 @@ DSP_LOUDNESS_METER_WEIGHTING_TYPE :: struct {
     channelweight: [32]f32,
 }
 
-
-DSP_ENVELOPEFOLLOWER :: enum i32 {
-    DSP_ENVELOPEFOLLOWER_ATTACK,
-    DSP_ENVELOPEFOLLOWER_RELEASE,
-    DSP_ENVELOPEFOLLOWER_ENVELOPE,
-    DSP_ENVELOPEFOLLOWER_USESIDECHAIN
-}
 
 DSP_CONVOLUTION_REVERB :: enum i32 {
     DSP_CONVOLUTION_REVERB_PARAM_IR,

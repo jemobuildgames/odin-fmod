@@ -1,6 +1,46 @@
-Microsoft (R) COFF/PE Dumper Version 14.33.31631.0
+Microsoft (R) COFF/PE Dumper Version 14.51.36260.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 
-Dump of file fsbank\lib\windows\x64\fmodL_vc.lib
-LINK : fatal error LNK1181: cannot open input file 'fsbank\lib\windows\x64\fmodL_vc.lib'
+Dump of file fmod\fsbank\lib\windows\x64\fsbank_vc.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  FMOD_OS_CriticalSection_Create
+                  FMOD_OS_CriticalSection_Enter
+                  FMOD_OS_CriticalSection_Free
+                  FMOD_OS_CriticalSection_IsLocked
+                  FMOD_OS_CriticalSection_Leave
+                  FMOD_OS_CriticalSection_TryEnter
+                  FMOD_OS_Debug_Output
+                  FMOD_OS_File_Close
+                  FMOD_OS_File_Open
+                  FMOD_OS_File_Read
+                  FMOD_OS_File_Seek
+                  FMOD_OS_File_Write
+                  FMOD_OS_Thread_Create
+                  FMOD_OS_Thread_Destroy
+                  FMOD_OS_Time_GetUs
+                  FMOD_OS_Time_Sleep
+                  FSBank_Build
+                  FSBank_BuildCancel
+                  FSBank_FetchFSBMemory
+                  FSBank_FetchNextProgressItem
+                  FSBank_Init
+                  FSBank_MemoryGetStats
+                  FSBank_MemoryInit
+                  FSBank_Release
+                  FSBank_ReleaseProgressItem
+
+  Summary
+
+          C0 .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           C .idata$6

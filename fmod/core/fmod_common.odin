@@ -2,12 +2,12 @@ package fmod_core
 
 /* ======================================================================================== */
 /* FMOD Core API - Common C/C++ header file.                                                */
-/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2023.                               */
+/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2026.                               */
 /*                                                                                          */
 /* This header is included by fmod.hpp (C++ interface) and fmod.h (C interface)             */
 /*                                                                                          */
 /* For more detail visit:                                                                   */
-/* https://fmod.com/docs/2.02/api/core-api-common.html                                      */
+/* https://fmod.com/docs/2.03/api/core-api-common.html                                      */
 /* ======================================================================================== */
 
 
@@ -16,7 +16,8 @@ package fmod_core
 // FMOD constants
 //
 
-VERSION: u32 : 0x00020215 /* 0xaaaabbcc -> aaaa = product version, bb = major version, cc = minor version.*/
+VERSION: u32 : 0x00020315 /* 0xaaaabbcc -> aaaa = product version, bb = major version, cc = minor version.*/
+BUILDNUMBER: u32 : 168126
 
 
 
@@ -52,6 +53,7 @@ DEBUG_TYPE_MEMORY :: 0x00000100
 DEBUG_TYPE_FILE :: 0x00000200
 DEBUG_TYPE_CODEC :: 0x00000400
 DEBUG_TYPE_TRACE :: 0x00000800
+DEBUG_TYPE_VIRTUAL :: 0x00001000
 DEBUG_DISPLAY_TIMESTAMPS :: 0x00010000
 DEBUG_DISPLAY_LINENUMBERS :: 0x00020000
 DEBUG_DISPLAY_THREAD :: 0x00040000
@@ -105,15 +107,14 @@ SYSTEM_CALLBACK_BADDSPCONNECTION :: 0x00000010
 SYSTEM_CALLBACK_PREMIX :: 0x00000020
 SYSTEM_CALLBACK_POSTMIX :: 0x00000040
 SYSTEM_CALLBACK_ERROR :: 0x00000080
-SYSTEM_CALLBACK_MIDMIX :: 0x00000100
-SYSTEM_CALLBACK_THREADDESTROYED :: 0x00000200
-SYSTEM_CALLBACK_PREUPDATE :: 0x00000400
-SYSTEM_CALLBACK_POSTUPDATE :: 0x00000800
-SYSTEM_CALLBACK_RECORDLISTCHANGED :: 0x00001000
-SYSTEM_CALLBACK_BUFFEREDNOMIX :: 0x00002000
-SYSTEM_CALLBACK_DEVICEREINITIALIZE :: 0x00004000
-SYSTEM_CALLBACK_OUTPUTUNDERRUN :: 0x00008000
-SYSTEM_CALLBACK_RECORDPOSITIONCHANGED :: 0x00010000
+SYSTEM_CALLBACK_THREADDESTROYED :: 0x00000100
+SYSTEM_CALLBACK_PREUPDATE :: 0x00000200
+SYSTEM_CALLBACK_POSTUPDATE :: 0x00000400
+SYSTEM_CALLBACK_RECORDLISTCHANGED :: 0x00000800
+SYSTEM_CALLBACK_BUFFEREDNOMIX :: 0x00001000
+SYSTEM_CALLBACK_DEVICEREINITIALIZE :: 0x00002000
+SYSTEM_CALLBACK_OUTPUTUNDERRUN :: 0x00004000
+SYSTEM_CALLBACK_RECORDPOSITIONCHANGED :: 0x00008000
 SYSTEM_CALLBACK_ALL :: 0xFFFFFFFF
 
 MODE :: distinct u32
@@ -205,7 +206,6 @@ CHANNELMASK_7POINT1 ::
 
 PORT_INDEX :: distinct uint
 PORT_INDEX_NONE :: 0xFFFFFFFFFFFFFFFF
-PORT_INDEX_FLAG_VR_CONTROLLER :: 0x1000000000000000
 
 THREAD_PRIORITY :: distinct i32
 /* Platform specific priority range */
@@ -450,6 +450,7 @@ OUTPUTTYPE :: enum i32 {
     OUTPUTTYPE_AAUDIO,
     OUTPUTTYPE_AUDIOWORKLET,
     OUTPUTTYPE_PHASE,
+    OUTPUTTYPE_OHAUDIO,
     OUTPUTTYPE_MAX,
 }
 
@@ -620,6 +621,7 @@ DSPCONNECTION_TYPE :: enum i32 {
     DSPCONNECTION_TYPE_SIDECHAIN,
     DSPCONNECTION_TYPE_SEND,
     DSPCONNECTION_TYPE_SEND_SIDECHAIN,
+    DSPCONNECTION_TYPE_PREALLOCATED,
     DSPCONNECTION_TYPE_MAX,
 }
 
@@ -657,6 +659,8 @@ PORT_TYPE :: enum i32 {
     PORT_TYPE_PERSONAL,
     PORT_TYPE_VIBRATION,
     PORT_TYPE_AUX,
+    PORT_TYPE_PASSTHROUGH,
+    PORT_TYPE_VR_VIBRATION,
     PORT_TYPE_MAX,
 }
 

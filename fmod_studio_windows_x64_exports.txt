@@ -1,6 +1,420 @@
-Microsoft (R) COFF/PE Dumper Version 14.33.31631.0
+Microsoft (R) COFF/PE Dumper Version 14.51.36260.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 
-Dump of file studio\lib\windows\x64\fmod_vc.lib
-LINK : fatal error LNK1181: cannot open input file 'studio\lib\windows\x64\fmod_vc.lib'
+Dump of file fmod\studio\lib\windows\x64\fmodstudio_vc.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?create@System@Studio@FMOD@@SA?AW4FMOD_RESULT@@PEAPEAV123@I@Z (public: static enum FMOD_RESULT __cdecl FMOD::Studio::System::create(class FMOD::Studio::System * *,unsigned int))
+                  ?createInstance@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAVEventInstance@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::createInstance(class FMOD::Studio::EventInstance * *)const )
+                  ?flushCommands@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::flushCommands(void))
+                  ?flushSampleLoading@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::flushSampleLoading(void))
+                  ?get3DAttributes@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAUFMOD_3D_ATTRIBUTES@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::get3DAttributes(struct FMOD_3D_ATTRIBUTES *)const )
+                  ?getAdvancedSettings@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_STUDIO_ADVANCEDSETTINGS@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getAdvancedSettings(struct FMOD_STUDIO_ADVANCEDSETTINGS *))
+                  ?getBank@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDPEAPEAVBank@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getBank(char const *,class FMOD::Studio::Bank * *)const )
+                  ?getBankByID@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBUFMOD_GUID@@PEAPEAVBank@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getBankByID(struct FMOD_GUID const *,class FMOD::Studio::Bank * *)const )
+                  ?getBankCount@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getBankCount(int *)const )
+                  ?getBankList@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAVBank@23@HPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getBankList(class FMOD::Studio::Bank * *,int,int *)const )
+                  ?getBufferUsage@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAUFMOD_STUDIO_BUFFER_USAGE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getBufferUsage(struct FMOD_STUDIO_BUFFER_USAGE *)const )
+                  ?getBus@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDPEAPEAVBus@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getBus(char const *,class FMOD::Studio::Bus * *)const )
+                  ?getBusByID@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBUFMOD_GUID@@PEAPEAVBus@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getBusByID(struct FMOD_GUID const *,class FMOD::Studio::Bus * *)const )
+                  ?getBusCount@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getBusCount(int *)const )
+                  ?getBusList@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAVBus@23@HPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getBusList(class FMOD::Studio::Bus * *,int,int *)const )
+                  ?getCPUUsage@Bus@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAI0@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::getCPUUsage(unsigned int *,unsigned int *)const )
+                  ?getCPUUsage@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAI0@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getCPUUsage(unsigned int *,unsigned int *)const )
+                  ?getCPUUsage@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAUFMOD_STUDIO_CPU_USAGE@@PEAUFMOD_CPU_USAGE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getCPUUsage(struct FMOD_STUDIO_CPU_USAGE *,struct FMOD_CPU_USAGE *)const )
+                  ?getChannelGroup@Bus@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAVChannelGroup@3@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::getChannelGroup(class FMOD::ChannelGroup * *)const )
+                  ?getChannelGroup@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAVChannelGroup@3@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getChannelGroup(class FMOD::ChannelGroup * *)const )
+                  ?getCommandAtTime@CommandReplay@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@MPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::getCommandAtTime(float,int *)const )
+                  ?getCommandCount@CommandReplay@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::getCommandCount(int *)const )
+                  ?getCommandInfo@CommandReplay@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@HPEAUFMOD_STUDIO_COMMAND_INFO@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::getCommandInfo(int,struct FMOD_STUDIO_COMMAND_INFO *)const )
+                  ?getCommandString@CommandReplay@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@HPEADH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::getCommandString(int,char *,int)const )
+                  ?getCoreSystem@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAV13@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getCoreSystem(class FMOD::System * *)const )
+                  ?getCurrentCommand@CommandReplay@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAHPEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::getCurrentCommand(int *,float *)const )
+                  ?getDescription@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAVEventDescription@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getDescription(class FMOD::Studio::EventDescription * *)const )
+                  ?getEvent@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDPEAPEAVEventDescription@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getEvent(char const *,class FMOD::Studio::EventDescription * *)const )
+                  ?getEventByID@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBUFMOD_GUID@@PEAPEAVEventDescription@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getEventByID(struct FMOD_GUID const *,class FMOD::Studio::EventDescription * *)const )
+                  ?getEventCount@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getEventCount(int *)const )
+                  ?getEventList@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAVEventDescription@23@HPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getEventList(class FMOD::Studio::EventDescription * *,int,int *)const )
+                  ?getID@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAUFMOD_GUID@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getID(struct FMOD_GUID *)const )
+                  ?getID@Bus@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAUFMOD_GUID@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::getID(struct FMOD_GUID *)const )
+                  ?getID@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAUFMOD_GUID@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getID(struct FMOD_GUID *)const )
+                  ?getID@VCA@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAUFMOD_GUID@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::VCA::getID(struct FMOD_GUID *)const )
+                  ?getInstanceCount@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getInstanceCount(int *)const )
+                  ?getInstanceList@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAVEventInstance@23@HPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getInstanceList(class FMOD::Studio::EventInstance * *,int,int *)const )
+                  ?getLength@CommandReplay@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::getLength(float *)const )
+                  ?getLength@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getLength(int *)const )
+                  ?getListenerAttributes@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@HPEAUFMOD_3D_ATTRIBUTES@@PEAUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getListenerAttributes(int,struct FMOD_3D_ATTRIBUTES *,struct FMOD_VECTOR *)const )
+                  ?getListenerMask@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getListenerMask(unsigned int *)const )
+                  ?getListenerWeight@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getListenerWeight(int,float *))
+                  ?getLoadingState@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAW4FMOD_STUDIO_LOADING_STATE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getLoadingState(enum FMOD_STUDIO_LOADING_STATE *)const )
+                  ?getMemoryUsage@Bus@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAUFMOD_STUDIO_MEMORY_USAGE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::getMemoryUsage(struct FMOD_STUDIO_MEMORY_USAGE *)const )
+                  ?getMemoryUsage@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAUFMOD_STUDIO_MEMORY_USAGE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getMemoryUsage(struct FMOD_STUDIO_MEMORY_USAGE *)const )
+                  ?getMemoryUsage@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAUFMOD_STUDIO_MEMORY_USAGE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getMemoryUsage(struct FMOD_STUDIO_MEMORY_USAGE *)const )
+                  ?getMinMaxDistance@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAM0@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getMinMaxDistance(float *,float *)const )
+                  ?getMinMaxDistance@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAM0@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getMinMaxDistance(float *,float *)const )
+                  ?getMute@Bus@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::getMute(bool *)const )
+                  ?getNumListeners@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getNumListeners(int *))
+                  ?getParameterByID@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@UFMOD_STUDIO_PARAMETER_ID@@PEAM1@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getParameterByID(struct FMOD_STUDIO_PARAMETER_ID,float *,float *)const )
+                  ?getParameterByID@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@UFMOD_STUDIO_PARAMETER_ID@@PEAM1@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getParameterByID(struct FMOD_STUDIO_PARAMETER_ID,float *,float *)const )
+                  ?getParameterByName@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDPEAM1@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getParameterByName(char const *,float *,float *)const )
+                  ?getParameterByName@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDPEAM1@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getParameterByName(char const *,float *,float *)const )
+                  ?getParameterDescriptionByID@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@UFMOD_STUDIO_PARAMETER_ID@@PEAUFMOD_STUDIO_PARAMETER_DESCRIPTION@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getParameterDescriptionByID(struct FMOD_STUDIO_PARAMETER_ID,struct FMOD_STUDIO_PARAMETER_DESCRIPTION *)const )
+                  ?getParameterDescriptionByID@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@UFMOD_STUDIO_PARAMETER_ID@@PEAUFMOD_STUDIO_PARAMETER_DESCRIPTION@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getParameterDescriptionByID(struct FMOD_STUDIO_PARAMETER_ID,struct FMOD_STUDIO_PARAMETER_DESCRIPTION *)const )
+                  ?getParameterDescriptionByIndex@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@HPEAUFMOD_STUDIO_PARAMETER_DESCRIPTION@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getParameterDescriptionByIndex(int,struct FMOD_STUDIO_PARAMETER_DESCRIPTION *)const )
+                  ?getParameterDescriptionByName@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDPEAUFMOD_STUDIO_PARAMETER_DESCRIPTION@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getParameterDescriptionByName(char const *,struct FMOD_STUDIO_PARAMETER_DESCRIPTION *)const )
+                  ?getParameterDescriptionByName@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDPEAUFMOD_STUDIO_PARAMETER_DESCRIPTION@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getParameterDescriptionByName(char const *,struct FMOD_STUDIO_PARAMETER_DESCRIPTION *)const )
+                  ?getParameterDescriptionCount@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getParameterDescriptionCount(int *)const )
+                  ?getParameterDescriptionCount@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getParameterDescriptionCount(int *)const )
+                  ?getParameterDescriptionList@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAUFMOD_STUDIO_PARAMETER_DESCRIPTION@@HPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getParameterDescriptionList(struct FMOD_STUDIO_PARAMETER_DESCRIPTION *,int,int *)const )
+                  ?getParameterLabelByID@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@UFMOD_STUDIO_PARAMETER_ID@@HPEADHPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getParameterLabelByID(struct FMOD_STUDIO_PARAMETER_ID,int,char *,int,int *)const )
+                  ?getParameterLabelByID@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@UFMOD_STUDIO_PARAMETER_ID@@HPEADHPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getParameterLabelByID(struct FMOD_STUDIO_PARAMETER_ID,int,char *,int,int *)const )
+                  ?getParameterLabelByIndex@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@HHPEADHPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getParameterLabelByIndex(int,int,char *,int,int *)const )
+                  ?getParameterLabelByName@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDHPEADHPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getParameterLabelByName(char const *,int,char *,int,int *)const )
+                  ?getParameterLabelByName@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDHPEADHPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getParameterLabelByName(char const *,int,char *,int,int *)const )
+                  ?getPath@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEADHPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getPath(char *,int,int *)const )
+                  ?getPath@Bus@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEADHPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::getPath(char *,int,int *)const )
+                  ?getPath@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEADHPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getPath(char *,int,int *)const )
+                  ?getPath@VCA@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEADHPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::VCA::getPath(char *,int,int *)const )
+                  ?getPaused@Bus@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::getPaused(bool *)const )
+                  ?getPaused@CommandReplay@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::getPaused(bool *)const )
+                  ?getPaused@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getPaused(bool *)const )
+                  ?getPitch@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAM0@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getPitch(float *,float *)const )
+                  ?getPlaybackState@CommandReplay@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAW4FMOD_STUDIO_PLAYBACK_STATE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::getPlaybackState(enum FMOD_STUDIO_PLAYBACK_STATE *)const )
+                  ?getPlaybackState@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAW4FMOD_STUDIO_PLAYBACK_STATE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getPlaybackState(enum FMOD_STUDIO_PLAYBACK_STATE *)const )
+                  ?getPortIndex@Bus@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_K@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::getPortIndex(unsigned __int64 *)const )
+                  ?getProperty@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@W4FMOD_STUDIO_EVENT_PROPERTY@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getProperty(enum FMOD_STUDIO_EVENT_PROPERTY,float *)const )
+                  ?getReverbLevel@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@HPEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getReverbLevel(int,float *)const )
+                  ?getSampleLoadingState@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAW4FMOD_STUDIO_LOADING_STATE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getSampleLoadingState(enum FMOD_STUDIO_LOADING_STATE *)const )
+                  ?getSampleLoadingState@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAW4FMOD_STUDIO_LOADING_STATE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getSampleLoadingState(enum FMOD_STUDIO_LOADING_STATE *)const )
+                  ?getSoundInfo@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDPEAUFMOD_STUDIO_SOUND_INFO@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getSoundInfo(char const *,struct FMOD_STUDIO_SOUND_INFO *)const )
+                  ?getSoundSize@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getSoundSize(float *)const )
+                  ?getStringCount@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getStringCount(int *)const )
+                  ?getStringInfo@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@HPEAUFMOD_GUID@@PEADHPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getStringInfo(int,struct FMOD_GUID *,char *,int,int *)const )
+                  ?getSystem@CommandReplay@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAVSystem@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::getSystem(class FMOD::Studio::System * *)const )
+                  ?getSystem@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAVSystem@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getSystem(class FMOD::Studio::System * *)const )
+                  ?getTimelinePosition@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getTimelinePosition(int *)const )
+                  ?getUserData@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getUserData(void * *)const )
+                  ?getUserData@CommandReplay@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::getUserData(void * *)const )
+                  ?getUserData@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getUserData(void * *)const )
+                  ?getUserData@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getUserData(void * *)const )
+                  ?getUserData@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getUserData(void * *)const )
+                  ?getUserProperty@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDPEAUFMOD_STUDIO_USER_PROPERTY@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getUserProperty(char const *,struct FMOD_STUDIO_USER_PROPERTY *)const )
+                  ?getUserPropertyByIndex@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@HPEAUFMOD_STUDIO_USER_PROPERTY@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getUserPropertyByIndex(int,struct FMOD_STUDIO_USER_PROPERTY *)const )
+                  ?getUserPropertyCount@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::getUserPropertyCount(int *)const )
+                  ?getVCA@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDPEAPEAVVCA@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getVCA(char const *,class FMOD::Studio::VCA * *)const )
+                  ?getVCAByID@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBUFMOD_GUID@@PEAPEAVVCA@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::getVCAByID(struct FMOD_GUID const *,class FMOD::Studio::VCA * *)const )
+                  ?getVCACount@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getVCACount(int *)const )
+                  ?getVCAList@Bank@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAPEAVVCA@23@HPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::getVCAList(class FMOD::Studio::VCA * *,int,int *)const )
+                  ?getVolume@Bus@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAM0@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::getVolume(float *,float *)const )
+                  ?getVolume@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAM0@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::getVolume(float *,float *)const )
+                  ?getVolume@VCA@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEAM0@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::VCA::getVolume(float *,float *)const )
+                  ?hasSustainPoint@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::hasSustainPoint(bool *)const )
+                  ?initialize@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@HIIPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::initialize(int,unsigned int,unsigned int,void *))
+                  ?is3D@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::is3D(bool *)const )
+                  ?isDopplerEnabled@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::isDopplerEnabled(bool *)const )
+                  ?isOneshot@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::isOneshot(bool *)const )
+                  ?isSnapshot@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::isSnapshot(bool *)const )
+                  ?isStream@EventDescription@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::isStream(bool *)const )
+                  ?isValid@Bank@Studio@FMOD@@QEBA_NXZ (public: bool __cdecl FMOD::Studio::Bank::isValid(void)const )
+                  ?isValid@Bus@Studio@FMOD@@QEBA_NXZ (public: bool __cdecl FMOD::Studio::Bus::isValid(void)const )
+                  ?isValid@CommandReplay@Studio@FMOD@@QEBA_NXZ (public: bool __cdecl FMOD::Studio::CommandReplay::isValid(void)const )
+                  ?isValid@EventDescription@Studio@FMOD@@QEBA_NXZ (public: bool __cdecl FMOD::Studio::EventDescription::isValid(void)const )
+                  ?isValid@EventInstance@Studio@FMOD@@QEBA_NXZ (public: bool __cdecl FMOD::Studio::EventInstance::isValid(void)const )
+                  ?isValid@System@Studio@FMOD@@QEBA_NXZ (public: bool __cdecl FMOD::Studio::System::isValid(void)const )
+                  ?isValid@VCA@Studio@FMOD@@QEBA_NXZ (public: bool __cdecl FMOD::Studio::VCA::isValid(void)const )
+                  ?isVirtual@EventInstance@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::isVirtual(bool *)const )
+                  ?keyOff@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::keyOff(void))
+                  ?loadBankCustom@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_STUDIO_BANK_INFO@@IPEAPEAVBank@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::loadBankCustom(struct FMOD_STUDIO_BANK_INFO const *,unsigned int,class FMOD::Studio::Bank * *))
+                  ?loadBankFile@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDIPEAPEAVBank@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::loadBankFile(char const *,unsigned int,class FMOD::Studio::Bank * *))
+                  ?loadBankMemory@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDHW4FMOD_STUDIO_LOAD_MEMORY_MODE@@IPEAPEAVBank@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::loadBankMemory(char const *,int,enum FMOD_STUDIO_LOAD_MEMORY_MODE,unsigned int,class FMOD::Studio::Bank * *))
+                  ?loadCommandReplay@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDIPEAPEAVCommandReplay@23@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::loadCommandReplay(char const *,unsigned int,class FMOD::Studio::CommandReplay * *))
+                  ?loadSampleData@Bank@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::loadSampleData(void))
+                  ?loadSampleData@EventDescription@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::loadSampleData(void))
+                  ?lockChannelGroup@Bus@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::lockChannelGroup(void))
+                  ?lookupID@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBDPEAUFMOD_GUID@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::lookupID(char const *,struct FMOD_GUID *)const )
+                  ?lookupPath@System@Studio@FMOD@@QEBA?AW4FMOD_RESULT@@PEBUFMOD_GUID@@PEADHPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::lookupPath(struct FMOD_GUID const *,char *,int,int *)const )
+                  ?registerPlugin@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_DSP_DESCRIPTION@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::registerPlugin(struct FMOD_DSP_DESCRIPTION const *))
+                  ?release@CommandReplay@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::release(void))
+                  ?release@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::release(void))
+                  ?release@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::release(void))
+                  ?releaseAllInstances@EventDescription@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::releaseAllInstances(void))
+                  ?resetBufferUsage@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::resetBufferUsage(void))
+                  ?seekToCommand@CommandReplay@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::seekToCommand(int))
+                  ?seekToTime@CommandReplay@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::seekToTime(float))
+                  ?set3DAttributes@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_3D_ATTRIBUTES@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::set3DAttributes(struct FMOD_3D_ATTRIBUTES const *))
+                  ?setAdvancedSettings@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_STUDIO_ADVANCEDSETTINGS@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::setAdvancedSettings(struct FMOD_STUDIO_ADVANCEDSETTINGS *))
+                  ?setBankPath@CommandReplay@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBD@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::setBankPath(char const *))
+                  ?setCallback@EventDescription@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@P6A?AW44@IPEAUFMOD_STUDIO_EVENTINSTANCE@@PEAX@ZI@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::setCallback(enum FMOD_RESULT (__cdecl*)(unsigned int,struct FMOD_STUDIO_EVENTINSTANCE *,void *),unsigned int))
+                  ?setCallback@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@P6A?AW44@IPEAUFMOD_STUDIO_EVENTINSTANCE@@PEAX@ZI@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setCallback(enum FMOD_RESULT (__cdecl*)(unsigned int,struct FMOD_STUDIO_EVENTINSTANCE *,void *),unsigned int))
+                  ?setCallback@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@P6A?AW44@PEAUFMOD_STUDIO_SYSTEM@@IPEAX1@ZI@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::setCallback(enum FMOD_RESULT (__cdecl*)(struct FMOD_STUDIO_SYSTEM *,unsigned int,void *,void *),unsigned int))
+                  ?setCreateInstanceCallback@CommandReplay@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@P6A?AW44@PEAUFMOD_STUDIO_COMMANDREPLAY@@HPEAUFMOD_STUDIO_EVENTDESCRIPTION@@PEAPEAUFMOD_STUDIO_EVENTINSTANCE@@PEAX@Z@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::setCreateInstanceCallback(enum FMOD_RESULT (__cdecl*)(struct FMOD_STUDIO_COMMANDREPLAY *,int,struct FMOD_STUDIO_EVENTDESCRIPTION *,struct FMOD_STUDIO_EVENTINSTANCE * *,void *)))
+                  ?setFrameCallback@CommandReplay@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@P6A?AW44@PEAUFMOD_STUDIO_COMMANDREPLAY@@HMPEAX@Z@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::setFrameCallback(enum FMOD_RESULT (__cdecl*)(struct FMOD_STUDIO_COMMANDREPLAY *,int,float,void *)))
+                  ?setListenerAttributes@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@HPEBUFMOD_3D_ATTRIBUTES@@PEBUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::setListenerAttributes(int,struct FMOD_3D_ATTRIBUTES const *,struct FMOD_VECTOR const *))
+                  ?setListenerMask@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@I@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setListenerMask(unsigned int))
+                  ?setListenerWeight@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@HM@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::setListenerWeight(int,float))
+                  ?setLoadBankCallback@CommandReplay@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@P6A?AW44@PEAUFMOD_STUDIO_COMMANDREPLAY@@HPEBUFMOD_GUID@@PEBDIPEAPEAUFMOD_STUDIO_BANK@@PEAX@Z@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::setLoadBankCallback(enum FMOD_RESULT (__cdecl*)(struct FMOD_STUDIO_COMMANDREPLAY *,int,struct FMOD_GUID const *,char const *,unsigned int,struct FMOD_STUDIO_BANK * *,void *)))
+                  ?setMute@Bus@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::setMute(bool))
+                  ?setNumListeners@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::setNumListeners(int))
+                  ?setParameterByID@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@UFMOD_STUDIO_PARAMETER_ID@@M_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setParameterByID(struct FMOD_STUDIO_PARAMETER_ID,float,bool))
+                  ?setParameterByID@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@UFMOD_STUDIO_PARAMETER_ID@@M_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::setParameterByID(struct FMOD_STUDIO_PARAMETER_ID,float,bool))
+                  ?setParameterByIDWithLabel@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@UFMOD_STUDIO_PARAMETER_ID@@PEBD_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setParameterByIDWithLabel(struct FMOD_STUDIO_PARAMETER_ID,char const *,bool))
+                  ?setParameterByIDWithLabel@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@UFMOD_STUDIO_PARAMETER_ID@@PEBD_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::setParameterByIDWithLabel(struct FMOD_STUDIO_PARAMETER_ID,char const *,bool))
+                  ?setParameterByName@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDM_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setParameterByName(char const *,float,bool))
+                  ?setParameterByName@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDM_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::setParameterByName(char const *,float,bool))
+                  ?setParameterByNameWithLabel@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBD0_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setParameterByNameWithLabel(char const *,char const *,bool))
+                  ?setParameterByNameWithLabel@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBD0_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::setParameterByNameWithLabel(char const *,char const *,bool))
+                  ?setParametersByIDs@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_STUDIO_PARAMETER_ID@@PEAMH_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setParametersByIDs(struct FMOD_STUDIO_PARAMETER_ID const *,float *,int,bool))
+                  ?setParametersByIDs@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_STUDIO_PARAMETER_ID@@PEAMH_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::setParametersByIDs(struct FMOD_STUDIO_PARAMETER_ID const *,float *,int,bool))
+                  ?setPaused@Bus@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::setPaused(bool))
+                  ?setPaused@CommandReplay@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::setPaused(bool))
+                  ?setPaused@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setPaused(bool))
+                  ?setPitch@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setPitch(float))
+                  ?setPortIndex@Bus@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@_K@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::setPortIndex(unsigned __int64))
+                  ?setProperty@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_STUDIO_EVENT_PROPERTY@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setProperty(enum FMOD_STUDIO_EVENT_PROPERTY,float))
+                  ?setReverbLevel@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@HM@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setReverbLevel(int,float))
+                  ?setTimelinePosition@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setTimelinePosition(int))
+                  ?setUserData@Bank@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::setUserData(void *))
+                  ?setUserData@CommandReplay@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::setUserData(void *))
+                  ?setUserData@EventDescription@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::setUserData(void *))
+                  ?setUserData@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setUserData(void *))
+                  ?setUserData@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::setUserData(void *))
+                  ?setVolume@Bus@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::setVolume(float))
+                  ?setVolume@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::setVolume(float))
+                  ?setVolume@VCA@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::VCA::setVolume(float))
+                  ?start@CommandReplay@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::start(void))
+                  ?start@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::start(void))
+                  ?startCommandCapture@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDI@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::startCommandCapture(char const *,unsigned int))
+                  ?stop@CommandReplay@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::CommandReplay::stop(void))
+                  ?stop@EventInstance@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_STUDIO_STOP_MODE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventInstance::stop(enum FMOD_STUDIO_STOP_MODE))
+                  ?stopAllEvents@Bus@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_STUDIO_STOP_MODE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::stopAllEvents(enum FMOD_STUDIO_STOP_MODE))
+                  ?stopCommandCapture@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::stopCommandCapture(void))
+                  ?unload@Bank@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::unload(void))
+                  ?unloadAll@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::unloadAll(void))
+                  ?unloadSampleData@Bank@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bank::unloadSampleData(void))
+                  ?unloadSampleData@EventDescription@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::EventDescription::unloadSampleData(void))
+                  ?unlockChannelGroup@Bus@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::Bus::unlockChannelGroup(void))
+                  ?unregisterPlugin@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@PEBD@Z (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::unregisterPlugin(char const *))
+                  ?update@System@Studio@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Studio::System::update(void))
+                  FMOD_OS_CriticalSection_Create
+                  FMOD_OS_CriticalSection_Enter
+                  FMOD_OS_CriticalSection_Free
+                  FMOD_OS_CriticalSection_IsLocked
+                  FMOD_OS_CriticalSection_Leave
+                  FMOD_OS_CriticalSection_TryEnter
+                  FMOD_OS_Debug_Output
+                  FMOD_OS_File_Close
+                  FMOD_OS_File_Open
+                  FMOD_OS_File_Read
+                  FMOD_OS_File_Seek
+                  FMOD_OS_File_Write
+                  FMOD_OS_Thread_Create
+                  FMOD_OS_Thread_Destroy
+                  FMOD_OS_Time_GetUs
+                  FMOD_OS_Time_Sleep
+                  FMOD_Studio_Bank_GetBusCount
+                  FMOD_Studio_Bank_GetBusList
+                  FMOD_Studio_Bank_GetEventCount
+                  FMOD_Studio_Bank_GetEventList
+                  FMOD_Studio_Bank_GetID
+                  FMOD_Studio_Bank_GetLoadingState
+                  FMOD_Studio_Bank_GetPath
+                  FMOD_Studio_Bank_GetSampleLoadingState
+                  FMOD_Studio_Bank_GetStringCount
+                  FMOD_Studio_Bank_GetStringInfo
+                  FMOD_Studio_Bank_GetUserData
+                  FMOD_Studio_Bank_GetVCACount
+                  FMOD_Studio_Bank_GetVCAList
+                  FMOD_Studio_Bank_IsValid
+                  FMOD_Studio_Bank_LoadSampleData
+                  FMOD_Studio_Bank_SetUserData
+                  FMOD_Studio_Bank_Unload
+                  FMOD_Studio_Bank_UnloadSampleData
+                  FMOD_Studio_Bus_GetCPUUsage
+                  FMOD_Studio_Bus_GetChannelGroup
+                  FMOD_Studio_Bus_GetID
+                  FMOD_Studio_Bus_GetMemoryUsage
+                  FMOD_Studio_Bus_GetMute
+                  FMOD_Studio_Bus_GetPath
+                  FMOD_Studio_Bus_GetPaused
+                  FMOD_Studio_Bus_GetPortIndex
+                  FMOD_Studio_Bus_GetVolume
+                  FMOD_Studio_Bus_IsValid
+                  FMOD_Studio_Bus_LockChannelGroup
+                  FMOD_Studio_Bus_SetMute
+                  FMOD_Studio_Bus_SetPaused
+                  FMOD_Studio_Bus_SetPortIndex
+                  FMOD_Studio_Bus_SetVolume
+                  FMOD_Studio_Bus_StopAllEvents
+                  FMOD_Studio_Bus_UnlockChannelGroup
+                  FMOD_Studio_CommandReplay_GetCommandAtTime
+                  FMOD_Studio_CommandReplay_GetCommandCount
+                  FMOD_Studio_CommandReplay_GetCommandInfo
+                  FMOD_Studio_CommandReplay_GetCommandString
+                  FMOD_Studio_CommandReplay_GetCurrentCommand
+                  FMOD_Studio_CommandReplay_GetLength
+                  FMOD_Studio_CommandReplay_GetPaused
+                  FMOD_Studio_CommandReplay_GetPlaybackState
+                  FMOD_Studio_CommandReplay_GetSystem
+                  FMOD_Studio_CommandReplay_GetUserData
+                  FMOD_Studio_CommandReplay_IsValid
+                  FMOD_Studio_CommandReplay_Release
+                  FMOD_Studio_CommandReplay_SeekToCommand
+                  FMOD_Studio_CommandReplay_SeekToTime
+                  FMOD_Studio_CommandReplay_SetBankPath
+                  FMOD_Studio_CommandReplay_SetCreateInstanceCallback
+                  FMOD_Studio_CommandReplay_SetFrameCallback
+                  FMOD_Studio_CommandReplay_SetLoadBankCallback
+                  FMOD_Studio_CommandReplay_SetPaused
+                  FMOD_Studio_CommandReplay_SetUserData
+                  FMOD_Studio_CommandReplay_Start
+                  FMOD_Studio_CommandReplay_Stop
+                  FMOD_Studio_EventDescription_CreateInstance
+                  FMOD_Studio_EventDescription_GetID
+                  FMOD_Studio_EventDescription_GetInstanceCount
+                  FMOD_Studio_EventDescription_GetInstanceList
+                  FMOD_Studio_EventDescription_GetLength
+                  FMOD_Studio_EventDescription_GetMinMaxDistance
+                  FMOD_Studio_EventDescription_GetParameterDescriptionByID
+                  FMOD_Studio_EventDescription_GetParameterDescriptionByIndex
+                  FMOD_Studio_EventDescription_GetParameterDescriptionByName
+                  FMOD_Studio_EventDescription_GetParameterDescriptionCount
+                  FMOD_Studio_EventDescription_GetParameterLabelByID
+                  FMOD_Studio_EventDescription_GetParameterLabelByIndex
+                  FMOD_Studio_EventDescription_GetParameterLabelByName
+                  FMOD_Studio_EventDescription_GetPath
+                  FMOD_Studio_EventDescription_GetSampleLoadingState
+                  FMOD_Studio_EventDescription_GetSoundSize
+                  FMOD_Studio_EventDescription_GetUserData
+                  FMOD_Studio_EventDescription_GetUserProperty
+                  FMOD_Studio_EventDescription_GetUserPropertyByIndex
+                  FMOD_Studio_EventDescription_GetUserPropertyCount
+                  FMOD_Studio_EventDescription_HasSustainPoint
+                  FMOD_Studio_EventDescription_Is3D
+                  FMOD_Studio_EventDescription_IsDopplerEnabled
+                  FMOD_Studio_EventDescription_IsOneshot
+                  FMOD_Studio_EventDescription_IsSnapshot
+                  FMOD_Studio_EventDescription_IsStream
+                  FMOD_Studio_EventDescription_IsValid
+                  FMOD_Studio_EventDescription_LoadSampleData
+                  FMOD_Studio_EventDescription_ReleaseAllInstances
+                  FMOD_Studio_EventDescription_SetCallback
+                  FMOD_Studio_EventDescription_SetUserData
+                  FMOD_Studio_EventDescription_UnloadSampleData
+                  FMOD_Studio_EventInstance_Get3DAttributes
+                  FMOD_Studio_EventInstance_GetCPUUsage
+                  FMOD_Studio_EventInstance_GetChannelGroup
+                  FMOD_Studio_EventInstance_GetDescription
+                  FMOD_Studio_EventInstance_GetListenerMask
+                  FMOD_Studio_EventInstance_GetMemoryUsage
+                  FMOD_Studio_EventInstance_GetMinMaxDistance
+                  FMOD_Studio_EventInstance_GetParameterByID
+                  FMOD_Studio_EventInstance_GetParameterByName
+                  FMOD_Studio_EventInstance_GetPaused
+                  FMOD_Studio_EventInstance_GetPitch
+                  FMOD_Studio_EventInstance_GetPlaybackState
+                  FMOD_Studio_EventInstance_GetProperty
+                  FMOD_Studio_EventInstance_GetReverbLevel
+                  FMOD_Studio_EventInstance_GetSystem
+                  FMOD_Studio_EventInstance_GetTimelinePosition
+                  FMOD_Studio_EventInstance_GetUserData
+                  FMOD_Studio_EventInstance_GetVolume
+                  FMOD_Studio_EventInstance_IsValid
+                  FMOD_Studio_EventInstance_IsVirtual
+                  FMOD_Studio_EventInstance_KeyOff
+                  FMOD_Studio_EventInstance_Release
+                  FMOD_Studio_EventInstance_Set3DAttributes
+                  FMOD_Studio_EventInstance_SetCallback
+                  FMOD_Studio_EventInstance_SetListenerMask
+                  FMOD_Studio_EventInstance_SetParameterByID
+                  FMOD_Studio_EventInstance_SetParameterByIDWithLabel
+                  FMOD_Studio_EventInstance_SetParameterByName
+                  FMOD_Studio_EventInstance_SetParameterByNameWithLabel
+                  FMOD_Studio_EventInstance_SetParametersByIDs
+                  FMOD_Studio_EventInstance_SetPaused
+                  FMOD_Studio_EventInstance_SetPitch
+                  FMOD_Studio_EventInstance_SetProperty
+                  FMOD_Studio_EventInstance_SetReverbLevel
+                  FMOD_Studio_EventInstance_SetTimelinePosition
+                  FMOD_Studio_EventInstance_SetUserData
+                  FMOD_Studio_EventInstance_SetVolume
+                  FMOD_Studio_EventInstance_Start
+                  FMOD_Studio_EventInstance_Stop
+                  FMOD_Studio_ParseID
+                  FMOD_Studio_System_Create
+                  FMOD_Studio_System_FlushCommands
+                  FMOD_Studio_System_FlushSampleLoading
+                  FMOD_Studio_System_GetAdvancedSettings
+                  FMOD_Studio_System_GetBank
+                  FMOD_Studio_System_GetBankByID
+                  FMOD_Studio_System_GetBankCount
+                  FMOD_Studio_System_GetBankList
+                  FMOD_Studio_System_GetBufferUsage
+                  FMOD_Studio_System_GetBus
+                  FMOD_Studio_System_GetBusByID
+                  FMOD_Studio_System_GetCPUUsage
+                  FMOD_Studio_System_GetCoreSystem
+                  FMOD_Studio_System_GetEvent
+                  FMOD_Studio_System_GetEventByID
+                  FMOD_Studio_System_GetListenerAttributes
+                  FMOD_Studio_System_GetListenerWeight
+                  FMOD_Studio_System_GetMemoryUsage
+                  FMOD_Studio_System_GetNumListeners
+                  FMOD_Studio_System_GetParameterByID
+                  FMOD_Studio_System_GetParameterByName
+                  FMOD_Studio_System_GetParameterDescriptionByID
+                  FMOD_Studio_System_GetParameterDescriptionByName
+                  FMOD_Studio_System_GetParameterDescriptionCount
+                  FMOD_Studio_System_GetParameterDescriptionList
+                  FMOD_Studio_System_GetParameterLabelByID
+                  FMOD_Studio_System_GetParameterLabelByName
+                  FMOD_Studio_System_GetSoundInfo
+                  FMOD_Studio_System_GetUserData
+                  FMOD_Studio_System_GetVCA
+                  FMOD_Studio_System_GetVCAByID
+                  FMOD_Studio_System_Initialize
+                  FMOD_Studio_System_IsValid
+                  FMOD_Studio_System_LoadBankCustom
+                  FMOD_Studio_System_LoadBankFile
+                  FMOD_Studio_System_LoadBankMemory
+                  FMOD_Studio_System_LoadCommandReplay
+                  FMOD_Studio_System_LookupID
+                  FMOD_Studio_System_LookupPath
+                  FMOD_Studio_System_RegisterPlugin
+                  FMOD_Studio_System_Release
+                  FMOD_Studio_System_ResetBufferUsage
+                  FMOD_Studio_System_SetAdvancedSettings
+                  FMOD_Studio_System_SetCallback
+                  FMOD_Studio_System_SetListenerAttributes
+                  FMOD_Studio_System_SetListenerWeight
+                  FMOD_Studio_System_SetNumListeners
+                  FMOD_Studio_System_SetParameterByID
+                  FMOD_Studio_System_SetParameterByIDWithLabel
+                  FMOD_Studio_System_SetParameterByName
+                  FMOD_Studio_System_SetParameterByNameWithLabel
+                  FMOD_Studio_System_SetParametersByIDs
+                  FMOD_Studio_System_SetUserData
+                  FMOD_Studio_System_StartCommandCapture
+                  FMOD_Studio_System_StopCommandCapture
+                  FMOD_Studio_System_UnloadAll
+                  FMOD_Studio_System_UnregisterPlugin
+                  FMOD_Studio_System_Update
+                  FMOD_Studio_VCA_GetID
+                  FMOD_Studio_VCA_GetPath
+                  FMOD_Studio_VCA_GetVolume
+                  FMOD_Studio_VCA_IsValid
+                  FMOD_Studio_VCA_SetVolume
+
+  Summary
+
+          CC .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+          10 .idata$6

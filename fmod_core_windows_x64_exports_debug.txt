@@ -1,8 +1,8 @@
-Microsoft (R) COFF/PE Dumper Version 14.33.31631.0
+Microsoft (R) COFF/PE Dumper Version 14.51.36260.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 
-Dump of file core\lib\windows\x64\fmodL_vc.lib
+Dump of file fmod\core\lib\windows\x64\fmodL_vc.lib
 
 File Type: LIBRARY
 
@@ -14,6 +14,7 @@ File Type: LIBRARY
                   ?addFadePoint@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@_KM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::addFadePoint(unsigned __int64,float))
                   ?addGroup@ChannelGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAV12@_NPEAPEAVDSPConnection@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelGroup::addGroup(class FMOD::ChannelGroup *,bool,class FMOD::DSPConnection * *))
                   ?addInput@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAV12@PEAPEAVDSPConnection@2@W4FMOD_DSPCONNECTION_TYPE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::addInput(class FMOD::DSP *,class FMOD::DSPConnection * *,enum FMOD_DSPCONNECTION_TYPE))
+                  ?addInputPreallocated@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAV12@PEAPEAVDSPConnection@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::addInputPreallocated(class FMOD::DSP *,class FMOD::DSPConnection * *))
                   ?addPolygon@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@MM_NHPEBUFMOD_VECTOR@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::addPolygon(float,float,bool,int,struct FMOD_VECTOR const *,int *))
                   ?addSyncPoint@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@IIPEBDPEAPEAUFMOD_SYNCPOINT@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::addSyncPoint(unsigned int,unsigned int,char const *,struct FMOD_SYNCPOINT * *))
                   ?attachChannelGroupToPort@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_PORT_TYPE@@_KPEAVChannelGroup@2@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::System::attachChannelGroupToPort(enum FMOD_PORT_TYPE,unsigned __int64,class FMOD::ChannelGroup *,bool))
@@ -25,6 +26,7 @@ File Type: LIBRARY
                   ?createDSP@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_DSP_DESCRIPTION@@PEAPEAVDSP@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createDSP(struct FMOD_DSP_DESCRIPTION const *,class FMOD::DSP * *))
                   ?createDSPByPlugin@System@FMOD@@QEAA?AW4FMOD_RESULT@@IPEAPEAVDSP@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createDSPByPlugin(unsigned int,class FMOD::DSP * *))
                   ?createDSPByType@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_DSP_TYPE@@PEAPEAVDSP@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createDSPByType(enum FMOD_DSP_TYPE,class FMOD::DSP * *))
+                  ?createDSPConnection@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_DSPCONNECTION_TYPE@@PEAPEAVDSPConnection@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createDSPConnection(enum FMOD_DSPCONNECTION_TYPE,class FMOD::DSPConnection * *))
                   ?createDiskFile@SystemI@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDPEAUFMOD_CREATESOUNDEXINFO@@PEAPEAVFile@2@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::SystemI::createDiskFile(char const *,struct FMOD_CREATESOUNDEXINFO *,class FMOD::File * *,bool *))
                   ?createGeometry@System@FMOD@@QEAA?AW4FMOD_RESULT@@HHPEAPEAVGeometry@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createGeometry(int,int,class FMOD::Geometry * *))
                   ?createMemoryFile@SystemI@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVFile@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::SystemI::createMemoryFile(class FMOD::File * *))
@@ -197,7 +199,7 @@ File Type: LIBRARY
                   ?getUserData@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getUserData(void * *))
                   ?getUserData@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getUserData(void * *))
                   ?getUserDataInternal@SoundI@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundI::getUserDataInternal(void * *))
-                  ?getVersion@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getVersion(unsigned int *))
+                  ?getVersion@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAI0@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getVersion(unsigned int *,unsigned int *))
                   ?getVolume@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getVolume(float *))
                   ?getVolume@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getVolume(float *))
                   ?getVolumeRamp@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getVolumeRamp(bool *))
@@ -234,7 +236,7 @@ File Type: LIBRARY
                   ?seekData@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@I@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::seekData(unsigned int))
                   ?set3DAttributes@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_VECTOR@@0@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DAttributes(struct FMOD_VECTOR const *,struct FMOD_VECTOR const *))
                   ?set3DAttributes@Reverb3D@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_VECTOR@@MM@Z (public: enum FMOD_RESULT __cdecl FMOD::Reverb3D::set3DAttributes(struct FMOD_VECTOR const *,float,float))
-                  ?set3DConeOrientation@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DConeOrientation(struct FMOD_VECTOR *))
+                  ?set3DConeOrientation@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DConeOrientation(struct FMOD_VECTOR const *))
                   ?set3DConeSettings@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@MMM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DConeSettings(float,float,float))
                   ?set3DConeSettings@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@MMM@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::set3DConeSettings(float,float,float))
                   ?set3DCustomRolloff@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_VECTOR@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DCustomRolloff(struct FMOD_VECTOR *,int))
@@ -495,6 +497,7 @@ File Type: LIBRARY
                   FMOD5_DSPConnection_SetMixMatrix
                   FMOD5_DSPConnection_SetUserData
                   FMOD5_DSP_AddInput
+                  FMOD5_DSP_AddInputPreallocated
                   FMOD5_DSP_DisconnectAll
                   FMOD5_DSP_DisconnectFrom
                   FMOD5_DSP_GetActive
@@ -637,6 +640,7 @@ File Type: LIBRARY
                   FMOD5_System_CreateDSP
                   FMOD5_System_CreateDSPByPlugin
                   FMOD5_System_CreateDSPByType
+                  FMOD5_System_CreateDSPConnection
                   FMOD5_System_CreateGeometry
                   FMOD5_System_CreateReverb3D
                   FMOD5_System_CreateSound
@@ -878,6 +882,7 @@ File Type: LIBRARY
                   FMOD_DSPConnection_SetMixMatrix
                   FMOD_DSPConnection_SetUserData
                   FMOD_DSP_AddInput
+                  FMOD_DSP_AddInputPreallocated
                   FMOD_DSP_DisconnectAll
                   FMOD_DSP_DisconnectFrom
                   FMOD_DSP_GetActive
@@ -1036,6 +1041,7 @@ File Type: LIBRARY
                   FMOD_System_CreateDSP
                   FMOD_System_CreateDSPByPlugin
                   FMOD_System_CreateDSPByType
+                  FMOD_System_CreateDSPConnection
                   FMOD_System_CreateGeometry
                   FMOD_System_CreateReverb3D
                   FMOD_System_CreateSound

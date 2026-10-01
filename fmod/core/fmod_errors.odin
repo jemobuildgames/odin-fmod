@@ -2,13 +2,13 @@ package fmod_core
 
 /* ==============================================================================================  */
 /* FMOD Core / Studio API - Error string header file.                                              */
-/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2023.                                      */
+/* Copyright (c), Firelight Technologies Pty, Ltd. 2004-2026.                                      */
 /*                                                                                                 */
 /* Use this header if you want to store or display a string version / english explanation          */
 /* of the FMOD error codes.                                                                        */
 /*                                                                                                 */
 /* For more detail visit:                                                                          */
-/* https://fmod.com/docs/2.02/api/core-api-common.html#fmod_result                                 */
+/* https://fmod.com/docs/2.03/api/core-api-common.html#fmod_result                                 */
 /* =============================================================================================== */
 
 error_string :: proc(errcode: RESULT) -> string {
@@ -42,7 +42,7 @@ error_string :: proc(errcode: RESULT) -> string {
         case .ERR_HTTP_TIMEOUT:              return "The HTTP request timed out."
         case .ERR_INITIALIZATION:            return "FMOD was not initialized correctly to support this function."
         case .ERR_INITIALIZED:               return "Cannot call this command after System::init."
-        case .ERR_INTERNAL:                  return "An error occurred that wasn't supposed to.  Contact support."
+        case .ERR_INTERNAL:                  return "An error occured in the FMOD system. Use the logging version of FMOD for more information."
         case .ERR_INVALID_FLOAT:             return "Value passed in was a NaN, Inf or denormalized float."
         case .ERR_INVALID_HANDLE:            return "An invalid object handle was used."
         case .ERR_INVALID_PARAM:             return "An invalid parameter was passed to this function."
@@ -80,7 +80,7 @@ error_string :: proc(errcode: RESULT) -> string {
         case .ERR_TAGNOTFOUND:               return "The specified tag could not be found or there are no tags."
         case .ERR_TOOMANYCHANNELS:           return "The sound created exceeds the allowable input channel count.  This can be increased using the 'maxinputchannels' parameter in System::setSoftwareFormat."
         case .ERR_TRUNCATED:                 return "The retrieved string is too long to fit in the supplied buffer and has been truncated."
-        case .ERR_UNIMPLEMENTED:             return "Something in FMOD hasn't been implemented when it should be! contact support!"
+        case .ERR_UNIMPLEMENTED:             return "Something in FMOD hasn't been implemented when it should be. Contact support."
         case .ERR_UNINITIALIZED:             return "This command failed because System::init or System::setDriver was not called."
         case .ERR_UNSUPPORTED:               return "A command issued was not supported by this object.  Possibly a plugin without certain callbacks specified."
         case .ERR_VERSION:                   return "The version number of this file format is not supported."
