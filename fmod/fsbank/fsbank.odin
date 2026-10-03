@@ -67,10 +67,14 @@ FORMAT :: enum i32 {
     FORMAT_VORBIS,
     FORMAT_FADPCM,
     FORMAT_OPUS,
+
+    FORMAT_MAX,
 }
 
 FSBVERSION :: enum i32 {
     FSBVERSION_FSB5,
+
+    FSBVERSION_MAX,
 }
 
 STATE :: enum i32 {
@@ -96,8 +100,8 @@ SUBSOUND :: struct {
 }
 
 PROGRESSITEM :: struct {
-    subSoundIndex: int,
-    threadIndex:   int,
+    subSoundIndex: i32,
+    threadIndex:   i32,
     state:         STATE,
     stateData:     rawptr,
 }
