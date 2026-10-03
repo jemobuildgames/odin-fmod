@@ -785,7 +785,7 @@ ADVANCEDSETTINGS :: struct {
     maxVorbisCodecs:          i32,
     maxAT9Codecs:             i32,
     maxFADPCMCodecs:          i32,
-    maxPCMCodecs:             i32,
+    maxOpusCodecs:            i32,
     ASIONumChannels:          i32,
     ASIOChannelList:          ^rawptr,
     ASIOSpeakerList:          ^SPEAKER,
@@ -799,7 +799,7 @@ ADVANCEDSETTINGS :: struct {
     resamplerMethod:          DSP_RESAMPLER,
     randomSeed:               u32,
     maxConvolutionThreads:    i32,
-    maxOpusCodecs:            i32,
+    maxSpatialObjects:        i32,
 }
 
 TAG :: struct {
